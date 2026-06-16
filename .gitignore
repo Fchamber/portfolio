@@ -8,9 +8,12 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
 dist-ssr
 *.local
+
+# NOTE: dist/ is intentionally committed so Cloudflare Pages deploys it
+# directly (no build step). Rebuild + commit dist/ after source changes.
+# Long-term fix: set a Pages build command (npm run build) and re-ignore dist/.
 
 # Editor directories and files
 .vscode/*
