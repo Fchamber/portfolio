@@ -1,73 +1,23 @@
-# React + TypeScript + Vite
+# Flynn Chambers Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio at https://flynnchambers.com, hosted on Cloudflare Pages from `Fchamber/portfolio`.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Use Node 22, then run `npm ci` and `npm run dev`.
+Run `npm run build` for the TypeScript check and production build.
 
-## React Compiler
+## Content and CV
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/data/content.ts`: shared content for the modern home page and Windows XP edition at `/xp`.
+- `src/pages/ModernPortfolio.tsx`: modern page and download controls.
+- `public/assets/flynn-chambers-portrait.jpg`: current portrait.
+- `public/assets/cv.pdf`: current two-page CV download.
+- `public/assets/Flynn-Chambers-CV.docx`: editable current CV.
+- `docs/Flynn-Chambers-CV.md`: current CV text source.
 
-## Expanding the ESLint configuration
+The current positioning targets temporary or fixed-term AI transformation roles in Brisbane. Employment dates retain the previously published website chronology; older reference documents can contain different dates. The earlier PDF under `docs/` is historical and is not the active CV.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Publishing
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Cloudflare Pages tracks `main`, runs `npm run build`, and serves `dist`. Built output is also retained in this repository; regenerate it whenever source or public assets change. Keep both website editions, PDF, Word and Markdown content aligned when editing the CV.

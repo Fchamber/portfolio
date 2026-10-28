@@ -17,8 +17,8 @@ export const projects: Project[] = [
     id: 1,
     title: 'Argus — AI-Powered XDR Triage',
     slug: 'argus',
-    description: 'MSc thesis. Local LLM pipeline that triages XDR security alerts at human-expert accuracy across 1,000 synthetic alerts.',
-    long_description: `Built as my MSc thesis, Argus is an AI-powered XDR alert analysis system using a local LLM pipeline. The system processes raw security alerts, enriches them with context, and produces structured triage decisions — severity, recommended action, analyst notes — matching human-expert accuracy across a corpus of 1,000 synthetic alerts.
+    description: 'MSc thesis. Local LLM pipeline that triages XDR security alerts evaluated across 1,000 synthetic alerts.',
+    long_description: `Built as my MSc thesis, Argus is an AI-powered XDR alert analysis system using a local LLM pipeline. The system processes raw security alerts, enriches them with context, and produces structured triage decisions — severity, recommended action, analyst notes — evaluated across a corpus of 1,000 synthetic alerts.
 
 The architecture uses a locally-hosted LLM (no cloud dependency) with a structured prompt chain for alert normalisation, threat classification, and response recommendation. Designed to sit between an XDR platform and a SOC analyst queue, dramatically reducing alert fatigue for lean security teams.
 
@@ -225,7 +225,7 @@ Styled with xp.css for authentic XP chrome. All content lives in a single static
     tags: ['React', 'TypeScript', 'Vite', 'Cloudflare Pages', 'xp.css'],
     featured: false,
     featured_order: undefined,
-    github_url: 'https://github.com/Fchamber',
+    github_url: 'https://github.com/Fchamber/portfolio',
     live_url: '',
     pdf_url: '',
     screenshot_url: '',
@@ -266,12 +266,12 @@ The paper addresses the tension between data utility (for analytics, AI, and bus
 // ─────────────────────────────────────────────────────────────────────────────
 export const about: About = {
   id: 1,
-  bio: `I work end to end on technical projects: scoping and selling solutions to customers, then designing and building them. Comfortable across infrastructure, cloud, and security, with a particular focus on AI and full-stack software development, and equally at home in a stakeholder meeting or a build session.
+  bio: `I help organisations turn AI opportunities into practical delivery plans and working tools. My work spans discovery, readiness assessments, workflow design, stakeholder conversations and hands-on implementation.
 
-Master of IT in Cybersecurity, with a track record of building tools and systems that solve real operational problems, from an AI-powered XDR triage engine to internal platforms that plug AI into a team's daily workflow.
+At Smile IT in Brisbane, I shape AI consulting services, build internal tools and integrations, and scope the Microsoft 365 data governance and security foundations needed for AI adoption. My engineering background covers cloud, identity, security and software, supported by a Master of Information Technology in Cyber Security.
 
-I'm focusing primarily on AI now, while drawing on my experience across cloud, security, and software.`,
-  photo_url: '/assets/me.JPG',
+I am seeking temporary or fixed-term AI transformation roles in Brisbane, bringing the ability to connect business requirements with technical delivery.`,
+  photo_url: '/assets/flynn-chambers-portrait.jpg',
   skill_groups: [
     {
       label: 'Consulting',
@@ -279,7 +279,7 @@ I'm focusing primarily on AI now, while drawing on my experience across cloud, s
     },
     {
       label: 'AI',
-      items: ['AI Consulting & Strategy', 'MCP Servers', 'LLM Tooling', 'Agent Deployment', 'Local LLMs', 'Model Routing', 'API Integration'],
+      items: ['AI Readiness Assessments', 'Copilot Readiness', 'Workflow Design', 'AI Consulting & Strategy', 'MCP Servers', 'LLM Tooling', 'Agent Deployment', 'Local LLMs', 'Model Routing', 'API Integration'],
     },
     {
       label: 'Development',
@@ -297,7 +297,7 @@ I'm focusing primarily on AI now, while drawing on my experience across cloud, s
   // Flat list (used by the /xp experience). Keep in sync with skill_groups above.
   skills: [
     'Solution Scoping', 'Stakeholder Management', 'Technical Pre-Sales', 'Quoting & Pricing', 'Proposals & SOWs',
-    'AI Consulting & Strategy', 'MCP Servers', 'LLM Tooling', 'Agent Deployment', 'Local LLMs', 'Model Routing', 'API Integration',
+    'AI Readiness Assessments', 'Copilot Readiness', 'Workflow Design', 'AI Consulting & Strategy', 'MCP Servers', 'LLM Tooling', 'Agent Deployment', 'Local LLMs', 'Model Routing', 'API Integration',
     'React', 'TypeScript', 'Next.js', 'Docker', 'REST APIs', 'Cloudflare', 'Firebase', 'SQL', 'PowerShell',
     'Azure', 'Entra ID', 'Microsoft 365', 'Windows Server', 'VMware', 'Hyper-V', 'Intune', 'Networking',
     'NIST', 'ISO 27001', 'CIS', 'Essential 8', 'Identity', 'Endpoint', 'Cloud Security',
@@ -387,60 +387,75 @@ export const cv: CV = {
   id: 1,
   pdf_url: '/assets/cv.pdf',
   web_content: `# Flynn Chambers
-### AI Engineer | Solutions Consultant
+### AI Transformation | Solutions Consultant
 Brisbane, Australia · flynnguychambers@gmail.com · +61 411 679 512
+flynnchambers.com · linkedin.com/in/flynn-chambers-tech
 
 ## Professional Summary
 
-Solutions consultant and engineer who works end to end on projects: scoping and selling technical solutions to customers, then designing and building them. Comfortable across infrastructure, cloud, and security, with a particular focus on AI and full-stack software development, and equally at home in a stakeholder meeting or a build session.
+Solutions consultant combining client discovery, AI enablement and hands-on engineering across Microsoft cloud, security and software. Translate business workflows into scoped delivery plans, assess data and governance prerequisites, and build tools and integrations that connect AI to everyday operations. Master of Information Technology in Cyber Security, with experience spanning managed services, technical training and SaaS leadership. Seeking temporary or fixed-term AI transformation roles in Brisbane.
 
-Master of IT in Cybersecurity, with a track record of developing tools and systems that solve real operational problems. Looking to focus primarily on AI while drawing on my experience across the other verticals.
+## Core Capabilities
+
+AI readiness and discovery · Workflow analysis · Stakeholder engagement · Proposals and SOWs · API and MCP integration · Microsoft 365 and Copilot readiness · Data governance · Cloud and security delivery
 
 ## Employment History
 
 ### Solutions Consultant, Smile IT
 *2026 – Present · Brisbane*
-- Scope and sell technical solutions to customers, running discovery and stakeholder meetings and translating their requirements into infrastructure, cloud, security, and AI projects.
-- Own solutions end to end, from initial conversation through to delivery, ensuring what is sold is what gets built.
-- Designed and built the company's internal quoting tool end to end: a full-stack application containerised with Docker, exposing its own REST APIs and an MCP integration to plug into AI workflows.
-- Develop internal tooling and automations in TypeScript and Next.js to streamline delivery and embed AI into the team's workflows.
-- Built out Smile IT's AI consulting offering, shaping the service, its positioning, and its go-to-market.
+- Lead discovery, scope solutions and prepare phased proposals across AI, Microsoft 365, infrastructure and security, translating business requirements into delivery plans.
+- Shape the AI consulting offering, including AI Readiness QuickScan, Copilot Readiness Check and AI Maturity Assessment tools and lead capture flows.
+- Build a Discovery Session Companion using HTML/JavaScript and the Anthropic API to support scoping across workflow automation, bespoke development and autonomous agents.
+- Develop internal quoting tools and API/MCP integrations; diagnose authentication and routing issues, map tool gaps and document catalog workflows and handovers.
+- Scope AI enablement with sensitivity labels, DLP and Conditional Access prerequisites; deliver tenant audits, Essential Eight assessments and incident response planning.
+- Combine client-facing consulting with hands-on delivery across Entra ID, Intune, Defender, Azure, SharePoint and network automation using NetBox and Python.
 
 ### Systems Engineer & Service Lead, Tribe Technology
 *2024 – 2026 · Auckland*
-- Led service delivery for 20+ enterprise clients, owning escalations and maintaining consistent standards across the client base.
+- Led service delivery for 20+ enterprise clients, managing escalations, stakeholder communication and technical documentation.
 - Deployed AI agents and automation into client environments, including cross-tenant identity synchronisation.
-- Rolled out security tooling across the client base: endpoint protection, awareness training, and threat monitoring.
-- Produced clear, branded technical documentation for clients and internal teams.
+- Delivered endpoint protection, security awareness and threat monitoring across the client base.
 
 ### Co-Director, Nhabit Ltd
 *2021 – 2024 · Co-Founder*
-- Co-founded a 3D architectural SaaS, growing it to $20K MRR before winding down.
-- Built and owned the full-stack infrastructure and a secure, cloud-based MVP on Azure.
-- Translated technical detail into business value for boards and investors.
+- Co-founded a 3D architectural SaaS business, scaling the team from 2 to 12 and reaching approximately $20K monthly recurring revenue before winding down.
+- Owned the technical stack and cloud-based MVP on Azure, alongside product planning, operations and communication with boards and investors.
 
 ### Trainer, Techtorium
 *2023 – 2024 · Auckland*
-- Taught 50+ students core IT: networking, virtualisation, cloud, and security.
-- Developed tailored course material that improved pass rates by 87%+.
+- Taught 50+ students networking, virtualisation, cloud and security, with an 87%+ pass rate.
+- Developed tailored course materials and practical learning support.
 
 ### IT Support Engineer (L1–L2), Intellium
 *2023 · Auckland*
-- Handled 18–24 daily tickets across software, hardware, and network issues while holding SLAs.
-- Implemented fixes that reduced recurring issues and improved client security posture.
+- Resolved 18–24 daily tickets across hardware, software and networking while meeting SLAs.
+- Investigated recurring issues and implemented fixes to improve reliability and security.
+
+## Selected Projects
+
+### Argus AI XDR Triage
+- Master's thesis: developed a local LLM pipeline for security alert analysis and structured triage, evaluated using 1,000 synthetic alerts.
+
+### Enterprise AI Assistant Deployment
+- Integrated an AI assistant with Microsoft 365 using Entra app registration, OAuth and Microsoft Graph; researched risks including token exposure and prompt injection.
 
 ## Education
 
-### Master of Information Technology: Cyber Security
-*Whitecliffe College, Auckland · Distinction · Grad. Jul 2025*
-- Thesis "Argus": an AI-powered XDR alert triage system using local LLMs.
+### Master of Information Technology in Cyber Security
+*Whitecliffe College, Auckland · Distinction · Graduated July 2025*
 
-### Level 7 Diploma: Cloud Management
+### Level 7 Diploma in Cloud Management
 *Techtorium NZIIT, Auckland · 2022*
 - Professionalism Award and Excellence Award.
 
 ## Certifications
 
-MS-900 · AZ-900 · Fortinet NSE 1–3 · NZQA US4098
+Microsoft MS-900 · Microsoft AZ-900 · Fortinet NSE 1–3 · NZQA US4098
+
+## Technical Skills
+
+AI and development: Anthropic API, Claude Code, MCP, Python, TypeScript, React, Next.js, Node.js, REST APIs, Docker and Git.
+Microsoft and governance: Microsoft 365, Entra ID, Intune, Defender, Azure IaaS, AVD, SharePoint, Power Automate, Copilot Studio, Essential Eight, DLP and Conditional Access.
+Infrastructure and operations: Windows Server, VMware, Hyper-V, NetBox, UniFi, HaloPSA and IT Glue.
 `,
 };

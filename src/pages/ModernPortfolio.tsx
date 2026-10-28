@@ -154,25 +154,25 @@ export default function ModernPortfolio() {
       {/* HERO */}
       <header className="m-hero">
         <div className="m-hero-doc">
-          <span className="m-mono m-muted">DOC. FC-2026-001 / REV. A</span>
+          <span className="m-mono m-muted">DOC. FC-2026-001 / REV. B</span>
         </div>
         <div className="m-hero-content">
-          <p className="m-hero-spec m-mono">— AI ENGINEER / SOLUTIONS CONSULTANT</p>
+          <p className="m-hero-spec m-mono">— AI TRANSFORMATION / SOLUTIONS CONSULTANT</p>
           <h1 className="m-hero-name">
             Flynn<br />
             <span className="m-accent">Chambers</span>
           </h1>
           <p className="m-hero-sub">
-            I scope, sell, and build technical solutions end to end, with a focus on AI,
-            security, and full-stack software. Master of IT in Cybersecurity. Brisbane, Australia.
+            I help teams adopt AI through discovery, workflow design and hands-on delivery.
+            Seeking temporary or fixed-term AI transformation roles in Brisbane.
           </p>
           <div className="m-hero-actions">
             <button className="m-btn m-btn-primary" onClick={() => scrollTo('projects')}>
               View Projects
             </button>
-            <button className="m-btn m-btn-secondary" onClick={() => scrollTo('contact')}>
-              Get in Touch
-            </button>
+            <a href={cv.pdf_url} download="Flynn-Chambers-CV.pdf" className="m-btn m-btn-secondary">
+              Download CV
+            </a>
           </div>
         </div>
         <div className="m-hero-footer m-mono m-muted">
@@ -196,7 +196,7 @@ export default function ModernPortfolio() {
               )}
             </div>
             <div className="m-about-text">
-              <h2>Solutions Architect &amp; AI Engineer</h2>
+              <h2>AI enablement from discovery to delivery</h2>
               <p>{about.bio}</p>
             </div>
           </div>
@@ -291,8 +291,12 @@ export default function ModernPortfolio() {
           </div>
           {cv.pdf_url && (
             <div className="m-reveal" style={{ marginTop: 32 }}>
-              <a href={cv.pdf_url} target="_blank" rel="noopener noreferrer" className="m-btn m-btn-secondary">
+              <a href={cv.pdf_url} download="Flynn-Chambers-CV.pdf" className="m-btn m-btn-secondary">
                 Download Full CV (PDF)
+              </a>
+              {' '}
+              <a href="/assets/Flynn-Chambers-CV.docx" download className="m-btn m-btn-secondary">
+                Download CV (Word)
               </a>
             </div>
           )}
@@ -342,8 +346,8 @@ export default function ModernPortfolio() {
           <div className="m-reveal">
             <h2>Let's build something.</h2>
             <p className="m-muted" style={{ maxWidth: 480, marginBottom: 32 }}>
-              Open to consulting engagements, security work, and AI projects.
-              Based in Brisbane, available remotely.
+              Seeking temporary or fixed-term AI transformation roles in Brisbane.
+              Available to discuss AI enablement, workflow automation and Microsoft 365 readiness.
             </p>
             <div className="m-contact-links">
               <a href={`mailto:${about.email}`} className="m-contact-link">
