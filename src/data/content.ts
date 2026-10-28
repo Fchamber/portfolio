@@ -14,19 +14,35 @@ import type { Project, About, Cert, CV } from '../types';
 
 export const projects: Project[] = [
   {
+  "id": 11,
+  "title": "Internal Quoting Platform — APIs and MCP",
+  "slug": "quoting-platform",
+  "description": "Internal software and integration work connecting commercial quoting workflows with AI tooling.",
+  "long_description": "Problem and ownership\nAt Smile IT, I work on internal quoting tooling that connects service catalog information, pricing and proposal preparation. My contribution spans application development, API integration and the workflows used by the consulting team.\n\nEngineering scope\nThe work includes a full-stack quoting application, Docker packaging, REST APIs and MCP integration. I also designed the pricing matrix used in quoting and documented catalog-based workflows and technical handovers.\n\nIntegration decisions\nBench integration work involved authentication and routing, mapping missing operations for quote sections and line items, and checking reference stability. These constraints determine which quoting actions AI tools can perform reliably.\n\nStatus and evidence\nThe work includes ongoing development, including a local QuoteBench MCP server. The case study covers application and integration delivery; business-impact measurement is a next step.",
+  "tags": [
+    "AI Integration",
+    "MCP",
+    "REST APIs",
+    "TypeScript",
+    "Docker"
+  ],
+  "featured": true,
+  "featured_order": 1,
+  "visible": true,
+  "sort_order": 0,
+  "created_at": "",
+  "updated_at": ""
+},
+  {
     id: 1,
-    title: 'Argus — AI-Powered XDR Triage',
+    title: "Argus — Local LLM Security Triage",
     slug: 'argus',
-    description: 'MSc thesis. Local LLM pipeline that triages XDR security alerts evaluated across 1,000 synthetic alerts.',
-    long_description: `Built as my MSc thesis, Argus is an AI-powered XDR alert analysis system using a local LLM pipeline. The system processes raw security alerts, enriches them with context, and produces structured triage decisions — severity, recommended action, analyst notes — evaluated across a corpus of 1,000 synthetic alerts.
-
-The architecture uses a locally-hosted LLM (no cloud dependency) with a structured prompt chain for alert normalisation, threat classification, and response recommendation. Designed to sit between an XDR platform and a SOC analyst queue, dramatically reducing alert fatigue for lean security teams.
-
-Currently exploring commercialisation as an MSP-native AI SOC tool.`,
+    description: "Master of IT research: a local LLM pipeline for structured XDR alert analysis, evaluated on 1,000 synthetic alerts.",
+    long_description: "Problem and ownership\nI developed Argus for my Master of Information Technology thesis to investigate how local LLMs could support security alert triage. The intended users are analysts working through an XDR alert queue.\n\nImplementation\nThe pipeline normalises alerts, adds context and uses a structured prompt chain for threat classification and response recommendations. Outputs include severity, recommended action and analyst notes. Local model hosting was chosen to explore processing without a cloud inference dependency.\n\nEvaluation and limits\nThe research used a corpus of 1,000 synthetic alerts. Synthetic data provided a controlled evaluation; generalisation to operational alerts remains a validation requirement. The linked thesis provides the research detail.\n\nStatus\nResearch prototype. Production use would require validation against representative operational data and an explicit human review process.",
     icon_url: '',
-    tags: ['AI', 'Security', 'Local LLMs', 'XDR', 'Python', 'MSc Thesis'],
+    tags: ['AI', 'Security', 'Local LLMs', 'XDR', 'Python', 'Master of IT Thesis'],
     featured: true,
-    featured_order: 1,
+    featured_order: 2,
     github_url: '',
     live_url: '',
     pdf_url: '/assets/Argus \u2013 LLM driven Cyber Security Executive Reporting Platform.pdf',
@@ -48,7 +64,7 @@ Currently exploring commercialisation as an MSP-native AI SOC tool.`,
 Built as a static site and deployed on Cloudflare Pages. Surprisingly good UX for a joke app — the "typing" indicator and response format mirror the real ChatGPT experience closely enough to fool people for a second.`,
     icon_url: '',
     tags: ['JavaScript', 'Cloudflare Pages', 'Static Site'],
-    featured: true,
+    featured: false,
     featured_order: 2,
     github_url: '',
     live_url: 'https://catgpt-2kk.pages.dev/',
@@ -56,7 +72,7 @@ Built as a static site and deployed on Cloudflare Pages. Surprisingly good UX fo
     screenshot_url: '',
     iframe_url: '',
     video_url: '',
-    visible: true,
+    visible: false,
     sort_order: 1,
     created_at: '',
     updated_at: '',
@@ -75,7 +91,7 @@ No rigid templates, no forced structure. You work naturally; thinkd infers the s
 Currently in active development. Nothing public yet.`,
     icon_url: '',
     tags: ['AI', 'React', 'Product', 'In Progress'],
-    featured: true,
+    featured: false,
     featured_order: 3,
     github_url: '',
     live_url: '',
@@ -83,25 +99,21 @@ Currently in active development. Nothing public yet.`,
     screenshot_url: '',
     iframe_url: '',
     video_url: '',
-    visible: true,
+    visible: false,
     sort_order: 2,
     created_at: '',
     updated_at: '',
   },
   {
     id: 4,
-    title: 'Enterprise OpenClaw Deployment',
+    title: "Enterprise AI Assistant — Microsoft 365 Integration",
     slug: 'openclaw',
-    description: 'Enterprise AI executive assistant deployment with Entra app registration, Graph API integration, and Telegram channels. Included a security risk research presentation.',
-    long_description: `Deployed and hardened an AI executive assistant (OpenClaw) across an enterprise Microsoft 365 environment. The work covered the full integration stack: Entra ID app registration, OAuth scopes, Graph API integration for calendar/email/document access, and Telegram channel connectivity for async AI interaction.
-
-Alongside the deployment, I conducted in-depth research into OpenClaw's security risk surface — data handling, token exposure, prompt injection vectors, and third-party integrations — and produced a formal presentation of findings for the client.
-
-Unable to showcase specifics due to client confidentiality.`,
+    description: "Client deployment connecting an AI assistant to Microsoft 365, with identity integration and a security risk review.",
+    long_description: "Problem and ownership\nI delivered the integration of an existing AI assistant platform, OpenClaw, with a client's Microsoft 365 environment. My contribution was deployment, identity and API integration, and security risk research.\n\nIntegration scope\nThe work covered Entra ID app registration, OAuth scopes, Microsoft Graph access for calendar, email and documents, and Telegram connectivity for asynchronous interaction. These integrations connected the assistant to existing workplace services.\n\nSecurity review\nI researched data handling, token exposure, prompt injection and third-party integration risks, then presented the findings to the client. The findings informed the client discussion around deployment risks and operational use.\n\nEvidence and boundaries\nClient configuration and data are confidential. Technical scope is summarised here at the integration level.",
     icon_url: '',
     tags: ['AI', 'Enterprise', 'Microsoft Entra', 'Graph API', 'Security'],
     featured: true,
-    featured_order: 4,
+    featured_order: 3,
     github_url: '',
     live_url: '',
     pdf_url: '',
@@ -117,16 +129,12 @@ Unable to showcase specifics due to client confidentiality.`,
     id: 5,
     title: 'Nhabit — 3D Architectural SaaS',
     slug: 'nhabit',
-    description: 'Co-founded a 3D architectural visualisation SaaS. Scaled from 2 to 12 people, reached ~$20K MRR. Now closed.',
-    long_description: `Co-founded Nhabit, a SaaS platform for 3D architectural visualisation targeting residential builders and property developers. I led the full technical stack — engineering specs, sprint planning, infrastructure, and security — while also running operations and the team.
-
-Grew from 2 co-founders to a team of 12 and scaled to approximately $20K MRR before shutting down. The technical stack covered the full Microsoft cloud suite: M365, Azure, Entra ID, SharePoint, and a cloud-first product architecture built from zero.
-
-The startup experience gave me a breadth of skills I couldn't have gotten any other way — product thinking, investor relations, hiring, and real accountability for technical and commercial outcomes.`,
+    description: "Co-founded a 3D architectural SaaS business, growing the team from 2 to 12 and reaching approximately $20K MRR before closure.",
+    long_description: "Commercial ownership\nI co-founded Nhabit, a 3D architectural visualisation SaaS for residential builders and property developers. The business grew from two founders to a team of twelve and reached approximately $20K monthly recurring revenue before closing.\n\nTechnical and delivery responsibility\nI owned the company's cloud infrastructure across Azure, Microsoft 365, Entra ID and SharePoint. I also led engineering specifications, sprint planning and technical operations for the product. This distinguishes my direct infrastructure work from my responsibility for coordinating wider product engineering.\n\nLeadership\nMy role included recruitment, team operations and communicating technical and commercial priorities to investors and the board. The experience developed my ability to scope delivery against business constraints and take responsibility for both execution and outcomes.",
     icon_url: '',
     tags: ['SaaS', 'Startup', 'Azure', 'M365', 'Leadership'],
-    featured: false,
-    featured_order: undefined,
+    featured: true,
+    featured_order: 4,
     github_url: '',
     live_url: '',
     pdf_url: '',
@@ -181,7 +189,7 @@ Built for people who apply to multiple roles and want their applications to actu
     screenshot_url: '',
     iframe_url: '',
     video_url: '',
-    visible: true,
+    visible: false,
     sort_order: 6,
     created_at: '',
     updated_at: '',
@@ -190,7 +198,7 @@ Built for people who apply to multiple roles and want their applications to actu
     id: 8,
     title: 'AskIT — M365 Tenant AI Assistant',
     slug: 'askit',
-    description: 'AI assistant that connects to a Microsoft 365 tenant via Graph API. Query tenant config, security posture, and user data in natural language.',
+    description: "Microsoft Graph-connected assistant for querying tenant configuration and security posture. Demonstration requires an authenticated tenant.",
     long_description: `AskIT is an AI assistant platform that connects to Microsoft 365 tenants via the Graph API, letting you interrogate tenant configuration, security posture, user data, and device compliance using plain English.
 
 Designed for MSPs and IT teams managing multiple environments — making complex tenant data instantly accessible without needing to navigate the admin portals. Ask "which users don't have MFA?" or "what conditional access policies are active?" and get a clean, structured answer.
@@ -231,7 +239,7 @@ Styled with xp.css for authentic XP chrome. All content lives in a single static
     screenshot_url: '',
     iframe_url: '',
     video_url: '',
-    visible: true,
+    visible: false,
     sort_order: 8,
     created_at: '',
     updated_at: '',
@@ -254,7 +262,7 @@ The paper addresses the tension between data utility (for analytics, AI, and bus
     screenshot_url: '',
     iframe_url: '',
     video_url: '',
-    visible: true,
+    visible: false,
     sort_order: 9,
     created_at: '',
     updated_at: '',
@@ -266,11 +274,11 @@ The paper addresses the tension between data utility (for analytics, AI, and bus
 // ─────────────────────────────────────────────────────────────────────────────
 export const about: About = {
   id: 1,
-  bio: `I help organisations turn AI opportunities into practical delivery plans and working tools. My work spans discovery, readiness assessments, workflow design, stakeholder conversations and hands-on implementation.
+  bio: `I design and build AI integrations for business workflows, combining software delivery with cloud, identity and security experience. I work from the initial business problem through scoping, implementation and technical handover.
 
-At Smile IT in Brisbane, I shape AI consulting services, build internal tools and integrations, and scope the Microsoft 365 data governance and security foundations needed for AI adoption. My engineering background covers cloud, identity, security and software, supported by a Master of Information Technology in Cyber Security.
+At Smile IT, that includes internal quoting tools, REST APIs and MCP integrations, alongside the development of an AI consulting offering. My wider work includes a local LLM security triage research project and enterprise AI assistant integration with Microsoft 365.
 
-I am seeking temporary or fixed-term AI transformation roles in Brisbane, bringing the ability to connect business requirements with technical delivery.`,
+I bring experience leading service delivery, co-founding a SaaS business and explaining technical decisions to customers, teams and investors. I hold a Master of Information Technology in Cyber Security.`,
   photo_url: '/assets/flynn-chambers-portrait.jpg',
   skill_groups: [
     {
@@ -303,7 +311,7 @@ I am seeking temporary or fixed-term AI transformation roles in Brisbane, bringi
     'NIST', 'ISO 27001', 'CIS', 'Essential 8', 'Identity', 'Endpoint', 'Cloud Security',
   ],
   email: 'flynnguychambers@gmail.com',
-  phone: '+61 411 679 512',
+  phone: '+61 409 334 038',
   linkedin_url: 'https://www.linkedin.com/in/flynn-chambers-tech/',
   github_url: 'https://github.com/Fchamber',
 };
@@ -387,33 +395,33 @@ export const cv: CV = {
   id: 1,
   pdf_url: '/assets/cv.pdf',
   web_content: `# Flynn Chambers
-### AI Transformation | Solutions Consultant
-Brisbane, Australia · flynnguychambers@gmail.com · +61 411 679 512
+### Enterprise AI | Solutions Engineering
+Brisbane, Australia · flynnguychambers@gmail.com · +61 409 334 038
 flynnchambers.com · linkedin.com/in/flynn-chambers-tech
 
 ## Professional Summary
 
-Solutions consultant combining client discovery, AI enablement and hands-on engineering across Microsoft cloud, security and software. Translate business workflows into scoped delivery plans, assess data and governance prerequisites, and build tools and integrations that connect AI to everyday operations. Master of Information Technology in Cyber Security, with experience spanning managed services, technical training and SaaS leadership. Seeking temporary or fixed-term AI transformation roles in Brisbane.
+Solutions consultant and engineer building AI integrations for business workflows, with experience across software, Microsoft cloud, identity and security. Own work from discovery and technical scoping through implementation and handover. Current work includes internal quoting software, REST APIs and MCP integrations; wider experience includes local LLM security research, enterprise AI assistant deployment and SaaS leadership. Master of Information Technology in Cyber Security.
 
 ## Core Capabilities
 
-AI readiness and discovery · Workflow analysis · Stakeholder engagement · Proposals and SOWs · API and MCP integration · Microsoft 365 and Copilot readiness · Data governance · Cloud and security delivery
+AI application integration · REST APIs and MCP · Technical solution design · Microsoft cloud and identity · Security and data governance · Workflow discovery · Stakeholder engagement · Delivery ownership
 
 ## Employment History
 
 ### Solutions Consultant, Smile IT
 *2026 – Present · Brisbane*
-- Lead discovery, scope solutions and prepare phased proposals across AI, Microsoft 365, infrastructure and security, translating business requirements into delivery plans.
-- Shape the AI consulting offering, including AI Readiness QuickScan, Copilot Readiness Check and AI Maturity Assessment tools and lead capture flows.
+- Develop internal quoting software across a full-stack application, Docker packaging, REST APIs and MCP integration; designed the pricing matrix supporting the team's quoting workflow.
+- Own integration work connecting AI tooling to catalog quoting operations, including authentication, routing, supported actions and reference stability; document workflows and technical handovers.
 - Build a Discovery Session Companion using HTML/JavaScript and the Anthropic API to support scoping across workflow automation, bespoke development and autonomous agents.
-- Develop internal quoting tools and API/MCP integrations; diagnose authentication and routing issues, map tool gaps and document catalog workflows and handovers.
-- Scope AI enablement with sensitivity labels, DLP and Conditional Access prerequisites; deliver tenant audits, Essential Eight assessments and incident response planning.
-- Combine client-facing consulting with hands-on delivery across Entra ID, Intune, Defender, Azure, SharePoint and network automation using NetBox and Python.
+- Shape the AI consulting offering through readiness assessments and discovery, translating business requirements into phased implementation proposals.
+- Scope the identity, data governance and security foundations for AI adoption, including sensitivity labels, DLP and Conditional Access; deliver work across Microsoft 365, Entra ID, Azure and SharePoint.
 
 ### Systems Engineer & Service Lead, Tribe Technology
 *2024 – 2026 · Auckland*
 - Led service delivery for 20+ enterprise clients, managing escalations, stakeholder communication and technical documentation.
-- Deployed AI agents and automation into client environments, including cross-tenant identity synchronisation.
+- Deployed AI agents and workflow automation into client environments.
+- Delivered identity automation, including cross-tenant synchronisation.
 - Delivered endpoint protection, security awareness and threat monitoring across the client base.
 
 ### Co-Director, Nhabit Ltd
@@ -437,7 +445,7 @@ AI readiness and discovery · Workflow analysis · Stakeholder engagement · Pro
 - Master's thesis: developed a local LLM pipeline for security alert analysis and structured triage, evaluated using 1,000 synthetic alerts.
 
 ### Enterprise AI Assistant Deployment
-- Integrated an AI assistant with Microsoft 365 using Entra app registration, OAuth and Microsoft Graph; researched risks including token exposure and prompt injection.
+- Deployed and integrated an existing AI assistant platform with Microsoft 365 using Entra app registration, OAuth and Microsoft Graph; researched token exposure and prompt injection risks.
 
 ## Education
 

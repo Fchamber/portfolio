@@ -1,31 +1,31 @@
 # Flynn Chambers
-### AI Transformation | Solutions Consultant
-Brisbane, Australia · flynnguychambers@gmail.com · +61 411 679 512
+### Enterprise AI | Solutions Engineering
+Brisbane, Australia · flynnguychambers@gmail.com · +61 409 334 038
 flynnchambers.com · linkedin.com/in/flynn-chambers-tech
 
 ## Professional Summary
 
-Solutions consultant combining client discovery, AI enablement and hands-on engineering across Microsoft cloud, security and software. Translate business workflows into scoped delivery plans, assess data and governance prerequisites, and build tools and integrations that connect AI to everyday operations. Master of Information Technology in Cyber Security, with experience spanning managed services, technical training and SaaS leadership. Seeking temporary or fixed-term AI transformation roles in Brisbane.
+Solutions consultant and engineer building AI integrations for business workflows, with experience across software, Microsoft cloud, identity and security. Own work from discovery and technical scoping through implementation and handover. Current work includes internal quoting software, REST APIs and MCP integrations; wider experience includes local LLM security research, enterprise AI assistant deployment and SaaS leadership. Master of Information Technology in Cyber Security.
 
 ## Core Capabilities
 
-AI readiness and discovery · Workflow analysis · Stakeholder engagement · Proposals and SOWs · API and MCP integration · Microsoft 365 and Copilot readiness · Data governance · Cloud and security delivery
+AI application integration · REST APIs and MCP · Technical solution design · Microsoft cloud and identity · Security and data governance · Workflow discovery · Stakeholder engagement · Delivery ownership
 
 ## Employment History
 
 ### Solutions Consultant, Smile IT
 *2026 – Present · Brisbane*
-- Lead discovery, scope solutions and prepare phased proposals across AI, Microsoft 365, infrastructure and security, translating business requirements into delivery plans.
-- Shape the AI consulting offering, including AI Readiness QuickScan, Copilot Readiness Check and AI Maturity Assessment tools and lead capture flows.
+- Develop internal quoting software across a full-stack application, Docker packaging, REST APIs and MCP integration; designed the pricing matrix supporting the team's quoting workflow.
+- Own integration work connecting AI tooling to catalog quoting operations, including authentication, routing, supported actions and reference stability; document workflows and technical handovers.
 - Build a Discovery Session Companion using HTML/JavaScript and the Anthropic API to support scoping across workflow automation, bespoke development and autonomous agents.
-- Develop internal quoting tools and API/MCP integrations; diagnose authentication and routing issues, map tool gaps and document catalog workflows and handovers.
-- Scope AI enablement with sensitivity labels, DLP and Conditional Access prerequisites; deliver tenant audits, Essential Eight assessments and incident response planning.
-- Combine client-facing consulting with hands-on delivery across Entra ID, Intune, Defender, Azure, SharePoint and network automation using NetBox and Python.
+- Shape the AI consulting offering through readiness assessments and discovery, translating business requirements into phased implementation proposals.
+- Scope the identity, data governance and security foundations for AI adoption, including sensitivity labels, DLP and Conditional Access; deliver work across Microsoft 365, Entra ID, Azure and SharePoint.
 
 ### Systems Engineer & Service Lead, Tribe Technology
 *2024 – 2026 · Auckland*
 - Led service delivery for 20+ enterprise clients, managing escalations, stakeholder communication and technical documentation.
-- Deployed AI agents and automation into client environments, including cross-tenant identity synchronisation.
+- Deployed AI agents and workflow automation into client environments.
+- Delivered identity automation, including cross-tenant synchronisation.
 - Delivered endpoint protection, security awareness and threat monitoring across the client base.
 
 ### Co-Director, Nhabit Ltd
@@ -49,7 +49,7 @@ AI readiness and discovery · Workflow analysis · Stakeholder engagement · Pro
 - Master's thesis: developed a local LLM pipeline for security alert analysis and structured triage, evaluated using 1,000 synthetic alerts.
 
 ### Enterprise AI Assistant Deployment
-- Integrated an AI assistant with Microsoft 365 using Entra app registration, OAuth and Microsoft Graph; researched risks including token exposure and prompt injection.
+- Deployed and integrated an existing AI assistant platform with Microsoft 365 using Entra app registration, OAuth and Microsoft Graph; researched token exposure and prompt injection risks.
 
 ## Education
 

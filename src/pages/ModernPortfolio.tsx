@@ -118,7 +118,7 @@ export default function ModernPortfolio() {
                 {NAV_LABELS[id]}
               </button>
             ))}
-            <a href="/xp" className="m-nav-link m-nav-xp">XP Edition</a>
+            
           </div>
           <button
             className="m-nav-hamburger"
@@ -144,9 +144,7 @@ export default function ModernPortfolio() {
                 {NAV_LABELS[id]}
               </button>
             ))}
-            <a href="/xp" className="m-mobile-nav-link" onClick={() => setMobileNavOpen(false)}>
-              XP Edition
-            </a>
+
           </div>
         </>
       )}
@@ -157,14 +155,14 @@ export default function ModernPortfolio() {
           <span className="m-mono m-muted">DOC. FC-2026-001 / REV. B</span>
         </div>
         <div className="m-hero-content">
-          <p className="m-hero-spec m-mono">— AI TRANSFORMATION / SOLUTIONS CONSULTANT</p>
+          <p className="m-hero-spec m-mono">— ENTERPRISE AI / SOLUTIONS ENGINEERING</p>
           <h1 className="m-hero-name">
             Flynn<br />
             <span className="m-accent">Chambers</span>
           </h1>
           <p className="m-hero-sub">
-            I help teams adopt AI through discovery, workflow design and hands-on delivery.
-            Seeking temporary or fixed-term AI transformation roles in Brisbane.
+            I design and build AI integrations for business workflows, bringing together
+            software engineering, Microsoft cloud and security. Based in Brisbane.
           </p>
           <div className="m-hero-actions">
             <button className="m-btn m-btn-primary" onClick={() => scrollTo('projects')}>
@@ -196,7 +194,7 @@ export default function ModernPortfolio() {
               )}
             </div>
             <div className="m-about-text">
-              <h2>AI enablement from discovery to delivery</h2>
+              <h2>AI delivery grounded in cloud and security</h2>
               <p>{about.bio}</p>
             </div>
           </div>
@@ -249,7 +247,7 @@ export default function ModernPortfolio() {
           {otherProjects.length > 0 && (
             <>
               <h3 className="m-mono m-muted m-reveal" style={{ marginTop: 48, marginBottom: 24 }}>
-                OTHER PROJECTS
+                FURTHER TECHNICAL WORK
               </h3>
               <div className="m-projects-grid">
                 {otherProjects.map((p) => (
