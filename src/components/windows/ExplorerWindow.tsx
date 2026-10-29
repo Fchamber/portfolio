@@ -113,7 +113,7 @@ export default function ExplorerWindow() {
     <>
       <WindowChrome
         id="portfolio"
-        title="Flynn Chambers — Portfolio"
+        title="Flynn Chambers: Portfolio"
         menuBar={menuBar}
         addressBar={addressBar}
       >

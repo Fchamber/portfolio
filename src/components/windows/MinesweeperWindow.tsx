@@ -134,7 +134,7 @@ export default function MinesweeperWindow() {
     }
 
     if (currentBoard[row][col].mine) {
-      // Game over — reveal all mines
+      // Game over: reveal all mines
       const revealed = currentBoard.map((r) =>
         r.map((c) => ({ ...c, revealed: c.mine ? true : c.revealed }))
       );

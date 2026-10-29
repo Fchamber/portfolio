@@ -155,7 +155,7 @@ export default function ModernPortfolio() {
           <span className="m-mono m-muted">DOC. FC-2026-001 / REV. B</span>
         </div>
         <div className="m-hero-content">
-          <p className="m-hero-spec m-mono">— ENTERPRISE AI / SOLUTIONS ENGINEERING</p>
+          <p className="m-hero-spec m-mono">ENTERPRISE AI / SOLUTIONS ENGINEERING</p>
           <h1 className="m-hero-name">
             Flynn<br />
             <span className="m-accent">Chambers</span>
@@ -416,7 +416,7 @@ function ProjectCard({ project, expanded, onToggle }: { project: Project; expand
             <span key={t} className="m-project-tag m-mono">{t}</span>
           ))}
         </div>
-        <span className="m-project-expand m-mono">{expanded ? '— COLLAPSE' : '+ EXPAND'}</span>
+        <span className="m-project-expand m-mono">{expanded ? 'COLLAPSE' : '+ EXPAND'}</span>
       </button>
       {expanded && (
         <div className="m-project-detail">

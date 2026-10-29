@@ -9,7 +9,7 @@ interface TaskbarEntry {
 }
 
 const WINDOWS: TaskbarEntry[] = [
-  { id: 'portfolio', label: 'Flynn Chambers — Portfolio', icon: '/assets/icons/portfolio.svg' },
+  { id: 'portfolio', label: 'Flynn Chambers: Portfolio', icon: '/assets/icons/portfolio.svg' },
   { id: 'minesweeper', label: 'Minesweeper', icon: '/assets/icons/minesweeper.svg' },
 ];
 

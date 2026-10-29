@@ -11,14 +11,14 @@ export default function AboutDialog({ onClose }: Props) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="title-bar">
-          <div className="title-bar-text">About Flynn Chambers — Portfolio</div>
+          <div className="title-bar-text">About Flynn Chambers: Portfolio</div>
           <div className="title-bar-controls">
             <button aria-label="Close" onClick={onClose} />
           </div>
         </div>
         <div className="about-dialog-content">
           <p>
-            <strong>Flynn Chambers — Portfolio</strong>
+            <strong>Flynn Chambers: Portfolio</strong>
             <br />
             Version 1.0
           </p>

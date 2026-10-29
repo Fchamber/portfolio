@@ -35,7 +35,7 @@ export const projects: Project[] = [
 },
   {
   "id": 13,
-  "title": "Iris — Governed Agent Workflows",
+  "title": "Iris: Governed Agent Workflows",
   "slug": "iris-agents",
   "description": "An agent platform in development with scoped identity, sandboxed execution and human-controlled outbound communication.",
   "long_description": "Problem and ownership\nI am building Iris at Smile IT to support operational work through governed AI agents, integrating existing agent runtimes with business systems.\n\nEngineering\nThe platform brings together Python, Halo PSA APIs, Microsoft 365, Teams and Docker sandboxing. I designed draft-only workflows in which a human sends the final communication, and refined application-permission scoping for Microsoft 365.\n\nIntegration and operations\nThe work includes replacing a runtime dependency with a read-only Halo client, evaluating model behaviour and developing an operator console from an existing open-source project.\n\nStatus\nDevelopment is ongoing. This case study describes engineering delivered so far, rather than a completed rollout or measured productivity gain.",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
 },
   {
   "id": 11,
-  "title": "BENCH — Quoting and Leads",
+  "title": "BENCH: Quoting and Leads",
   "slug": "quoting-platform",
   "description": "Full-stack quoting and leads software integrated with Halo PSA. Leads is live; quoting was trialled and demonstrated.",
   "long_description": "Problem and ownership\nI built BENCH at Smile IT to connect opportunity qualification, quoting and customer information in one application.\n\nEngineering\nThe application uses Next.js, TypeScript, PostgreSQL and Prisma, with Halo PSA integration, Azure hosting and an MCP interface. I built an incremental sync approach around the API’s available capabilities and developed a layout-aware quote editor.\n\nStatus\nThe quoting module was trialled and demonstrated while the business continued evaluating quoting options. The leads module is live and used by the sales team. These are distinct outcomes; the full quoting platform was not a production rollout.",
@@ -75,7 +75,7 @@ export const projects: Project[] = [
 },
   {
     id: 1,
-    title: "Argus — Local LLM Security Triage",
+    title: "Argus: Local LLM Security Triage",
     slug: 'argus',
     description: "Master of IT research: a local LLM pipeline for structured XDR alert analysis, evaluated on 1,000 synthetic alerts.",
     long_description: "Problem and ownership\nI developed Argus for my Master of Information Technology thesis to investigate how local LLMs could support security alert triage. The intended users are analysts working through an XDR alert queue.\n\nImplementation\nThe pipeline normalises alerts, adds context and uses a structured prompt chain for threat classification and response recommendations. Outputs include severity, recommended action and analyst notes. Local model hosting was chosen to explore processing without a cloud inference dependency.\n\nEvaluation and limits\nThe research used a corpus of 1,000 synthetic alerts. Synthetic data provided a controlled evaluation; generalisation to operational alerts remains a validation requirement. The linked thesis provides the research detail.\n\nStatus\nResearch prototype. Production use would require validation against representative operational data and an explicit human review process.",
@@ -99,9 +99,9 @@ export const projects: Project[] = [
     title: 'catGPT',
     slug: 'catgpt',
     description: 'Parody ChatGPT that responds to every message with a curated cat video. Static site on Cloudflare Pages.',
-    long_description: `A parody of ChatGPT built as a fun side project — whatever you type, catGPT responds with a thoughtfully curated cat video.
+    long_description: `A parody of ChatGPT built as a fun side project: whatever you type, catGPT responds with a thoughtfully curated cat video.
 
-Built as a static site and deployed on Cloudflare Pages. Surprisingly good UX for a joke app — the "typing" indicator and response format mirror the real ChatGPT experience closely enough to fool people for a second.`,
+Built as a static site and deployed on Cloudflare Pages. Surprisingly good UX for a joke app: the "typing" indicator and response format mirror the real ChatGPT experience closely enough to fool people for a second.`,
     icon_url: '',
     tags: ['JavaScript', 'Cloudflare Pages', 'Static Site'],
     featured: false,
@@ -121,12 +121,12 @@ Built as a static site and deployed on Cloudflare Pages. Surprisingly good UX fo
     id: 3,
     title: 'thinkd',
     slug: 'thinkd',
-    description: 'AI-powered note-taking and project management on an infinite canvas. Dump anything in — AI auto-organises into dashboards, tasks, and timelines.',
+    description: 'AI-powered note-taking and project management on an infinite canvas. Dump anything in: AI auto-organises into dashboards, tasks, and timelines.',
     long_description: `thinkd is an AI-native productivity tool built for developers and technical people who think in systems.
 
-The core idea: an infinite canvas where you can dump anything — meeting notes, code snippets, ideas, URLs — and the AI automatically organises it into structured views: dashboards, task lists, timelines, dependency graphs.
+The core idea: an infinite canvas where you can dump anything: meeting notes, code snippets, ideas, URLs: and the AI automatically organises it into structured views: dashboards, task lists, timelines, dependency graphs.
 
-No rigid templates, no forced structure. You work naturally; thinkd infers the structure and surfaces what matters. Developer-focused aesthetic — dark mode, keyboard-first, minimal UI overhead.
+No rigid templates, no forced structure. You work naturally; thinkd infers the structure and surfaces what matters. Developer-focused aesthetic: dark mode, keyboard-first, minimal UI overhead.
 
 Currently in active development. Nothing public yet.`,
     icon_url: '',
@@ -146,7 +146,7 @@ Currently in active development. Nothing public yet.`,
   },
   {
     id: 4,
-    title: "Enterprise AI Assistant — Microsoft 365 Integration",
+    title: "Enterprise AI Assistant: Microsoft 365 Integration",
     slug: 'openclaw',
     description: "Client deployment connecting an AI assistant to Microsoft 365, with identity integration and a security risk review.",
     long_description: "Problem and ownership\nI delivered the integration of an existing AI assistant platform, OpenClaw, with a client's Microsoft 365 environment. My contribution was deployment, identity and API integration, and security risk research.\n\nIntegration scope\nThe work covered Entra ID app registration, OAuth scopes, Microsoft Graph access for calendar, email and documents, and Telegram connectivity for asynchronous interaction. These integrations connected the assistant to existing workplace services.\n\nSecurity review\nI researched data handling, token exposure, prompt injection and third-party integration risks, then presented the findings to the client. The findings informed the client discussion around deployment risks and operational use.\n\nEvidence and boundaries\nClient configuration and data are confidential. Technical scope is summarised here at the integration level.",
@@ -167,7 +167,7 @@ Currently in active development. Nothing public yet.`,
   },
   {
     id: 5,
-    title: 'Nhabit — 3D Architectural SaaS',
+    title: 'Nhabit: 3D Architectural SaaS',
     slug: 'nhabit',
     description: "Co-founded a 3D architectural SaaS business, growing the team from 2 to 12 and reaching approximately $20K MRR before closure.",
     long_description: "Commercial ownership\nI co-founded Nhabit, a 3D architectural visualisation SaaS for residential builders and property developers. The business grew from two founders to a team of twelve and reached approximately $20K monthly recurring revenue before closing.\n\nTechnical and delivery responsibility\nI owned the company's cloud infrastructure across Azure, Microsoft 365, Entra ID and SharePoint. I also led engineering specifications, sprint planning and technical operations for the product. This distinguishes my direct infrastructure work from my responsibility for coordinating wider product engineering.\n\nLeadership\nMy role included recruitment, team operations and communicating technical and commercial priorities to investors and the board. The experience developed my ability to scope delivery against business constraints and take responsibility for both execution and outcomes.",
@@ -213,10 +213,10 @@ Built primarily to have full ownership of personal data, but also as a practical
   },
   {
     id: 7,
-    title: 'Jobber — CV Optimiser',
+    title: 'Jobber: CV Optimiser',
     slug: 'jobber',
     description: 'Tool for tailoring a CV to a specific job description. Paste a JD, get a targeted version of your CV back.',
-    long_description: `Jobber is a CV optimisation tool — paste in a job description, and it rewrites or restructures your CV to match the language, priorities, and keywords of that specific role.
+    long_description: `Jobber is a CV optimisation tool: paste in a job description, and it rewrites or restructures your CV to match the language, priorities, and keywords of that specific role.
 
 Built for people who apply to multiple roles and want their applications to actually land, without manually editing their CV every time. Currently being packaged for deployment on Cloudflare Pages.`,
     icon_url: '',
@@ -236,14 +236,14 @@ Built for people who apply to multiple roles and want their applications to actu
   },
   {
     id: 8,
-    title: 'AskIT — M365 Tenant AI Assistant',
+    title: 'AskIT: M365 Tenant AI Assistant',
     slug: 'askit',
     description: "Microsoft Graph-connected assistant for querying tenant configuration and security posture. Demonstration requires an authenticated tenant.",
     long_description: `AskIT is an AI assistant platform that connects to Microsoft 365 tenants via the Graph API, letting you interrogate tenant configuration, security posture, user data, and device compliance using plain English.
 
-Designed for MSPs and IT teams managing multiple environments — making complex tenant data instantly accessible without needing to navigate the admin portals. Ask "which users don't have MFA?" or "what conditional access policies are active?" and get a clean, structured answer.
+Designed for MSPs and IT teams managing multiple environments: making complex tenant data instantly accessible without needing to navigate the admin portals. Ask "which users don't have MFA?" or "what conditional access policies are active?" and get a clean, structured answer.
 
-Live and functional, but requires integration with a Microsoft tenant to demonstrate — not publicly hostable without auth.`,
+Live and functional, but requires integration with a Microsoft tenant to demonstrate: not publicly hostable without auth.`,
     icon_url: '',
     tags: ['AI', 'Microsoft 365', 'Graph API', 'React', 'Node.js'],
     featured: false,
@@ -261,14 +261,14 @@ Live and functional, but requires integration with a Microsoft tenant to demonst
   },
   {
     id: 9,
-    title: 'This Portfolio — flynnchambers.com',
+    title: 'This Portfolio: flynnchambers.com',
     slug: 'portfolio',
     description: 'Windows XP-themed personal portfolio site. React + Vite SPA deployed on Cloudflare Pages, with draggable windows, a working Minesweeper, and a boot sequence.',
-    long_description: `The site you're looking at right now. A Windows XP-themed portfolio built from scratch with React, Vite, and TypeScript — deployed as a static SPA on Cloudflare Pages.
+    long_description: `The site you're looking at right now. A Windows XP-themed portfolio built from scratch with React, Vite, and TypeScript: deployed as a static SPA on Cloudflare Pages.
 
 Features include: draggable, resizable, and maximisable windows using react-draggable; a fully functional Minesweeper game; an XP-style boot sequence on load; mobile-responsive layout; and an Explorer-style navigation shell with sidebar, address bar, and menu.
 
-Styled with xp.css for authentic XP chrome. All content lives in a single static data file — no backend, no CMS.`,
+Styled with xp.css for authentic XP chrome. All content lives in a single static data file: no backend, no CMS.`,
     icon_url: '',
     tags: ['React', 'TypeScript', 'Vite', 'Cloudflare Pages', 'xp.css'],
     featured: false,
@@ -286,10 +286,10 @@ Styled with xp.css for authentic XP chrome. All content lives in a single static
   },
   {
     id: 10,
-    title: 'Data Privacy & User Data Control — A NZ Perspective',
+    title: 'Data Privacy & User Data Control: A NZ Perspective',
     slug: 'data-privacy-paper',
     description: 'Research paper examining data privacy frameworks, user data rights, and control mechanisms through the lens of New Zealand law and policy.',
-    long_description: `A research paper examining data privacy and user data control through a New Zealand legislative and policy lens — covering the Privacy Act 2020, comparisons with GDPR and the Australian Privacy Act, and practical implications for organisations handling personal data.
+    long_description: `A research paper examining data privacy and user data control through a New Zealand legislative and policy lens: covering the Privacy Act 2020, comparisons with GDPR and the Australian Privacy Act, and practical implications for organisations handling personal data.
 
 The paper addresses the tension between data utility (for analytics, AI, and business intelligence) and individual rights to access, correction, and erasure. It also looks at emerging challenges: cross-border data flows, AI-generated inferences, and the adequacy of current frameworks for a world where data is the product.`,
     icon_url: '',
