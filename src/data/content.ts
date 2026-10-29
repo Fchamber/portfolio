@@ -14,11 +14,51 @@ import type { Project, About, Cert, CV } from '../types';
 
 export const projects: Project[] = [
   {
+  "id": 12,
+  "title": "Enterprise MCP Integration",
+  "slug": "enterprise-mcp",
+  "description": "Production integration connecting business data to AI tools, with Entra identity and encrypted token storage.",
+  "long_description": "Problem and ownership\nAt Smile IT, I built and deployed a read-only MCP server exposing an existing business application through controlled tools for AI assistants.\n\nArchitecture\nThe integration uses Python, FastMCP and Azure Container Apps. I designed two access gates using Entra ID security-group membership and an app role, plus encrypted OAuth token storage on Azure Files.\n\nSecurity engineering\nI audited the implementation, identified a path-parameter injection issue and verified a tested fix was deployed. I also worked through connector behaviour across Claude and the Microsoft Copilot ecosystem.\n\nStatus\nThe integration is deployed. Security review and access-boundary work continue; deployment does not imply every identified risk has been closed. Client data and implementation details remain private.",
+  "tags": [
+    "MCP",
+    "Python",
+    "FastMCP",
+    "Azure",
+    "Entra ID"
+  ],
+  "featured": true,
+  "featured_order": 1,
+  "visible": true,
+  "sort_order": 12,
+  "created_at": "",
+  "updated_at": ""
+},
+  {
+  "id": 13,
+  "title": "Iris — Governed Agent Workflows",
+  "slug": "iris-agents",
+  "description": "An agent platform in development with scoped identity, sandboxed execution and human-controlled outbound communication.",
+  "long_description": "Problem and ownership\nI am building Iris at Smile IT to support operational work through governed AI agents, integrating existing agent runtimes with business systems.\n\nEngineering\nThe platform brings together Python, Halo PSA APIs, Microsoft 365, Teams and Docker sandboxing. I designed draft-only workflows in which a human sends the final communication, and refined application-permission scoping for Microsoft 365.\n\nIntegration and operations\nThe work includes replacing a runtime dependency with a read-only Halo client, evaluating model behaviour and developing an operator console from an existing open-source project.\n\nStatus\nDevelopment is ongoing. This case study describes engineering delivered so far, rather than a completed rollout or measured productivity gain.",
+  "tags": [
+    "Agents",
+    "Python",
+    "Docker",
+    "Microsoft 365",
+    "AI Governance"
+  ],
+  "featured": true,
+  "featured_order": 2,
+  "visible": true,
+  "sort_order": 13,
+  "created_at": "",
+  "updated_at": ""
+},
+  {
   "id": 11,
-  "title": "Internal Quoting Platform — APIs and MCP",
+  "title": "BENCH — Quoting and Leads",
   "slug": "quoting-platform",
-  "description": "Internal software and integration work connecting commercial quoting workflows with AI tooling.",
-  "long_description": "Problem and ownership\nAt Smile IT, I work on internal quoting tooling that connects service catalog information, pricing and proposal preparation. My contribution spans application development, API integration and the workflows used by the consulting team.\n\nEngineering scope\nThe work includes a full-stack quoting application, Docker packaging, REST APIs and MCP integration. I also designed the pricing matrix used in quoting and documented catalog-based workflows and technical handovers.\n\nIntegration decisions\nBench integration work involved authentication and routing, mapping missing operations for quote sections and line items, and checking reference stability. These constraints determine which quoting actions AI tools can perform reliably.\n\nStatus and evidence\nThe work includes ongoing development, including a local QuoteBench MCP server. The case study covers application and integration delivery; business-impact measurement is a next step.",
+  "description": "Full-stack quoting and leads software integrated with Halo PSA. Leads is live; quoting was trialled and demonstrated.",
+  "long_description": "Problem and ownership\nI built BENCH at Smile IT to connect opportunity qualification, quoting and customer information in one application.\n\nEngineering\nThe application uses Next.js, TypeScript, PostgreSQL and Prisma, with Halo PSA integration, Azure hosting and an MCP interface. I built an incremental sync approach around the API’s available capabilities and developed a layout-aware quote editor.\n\nStatus\nThe quoting module was trialled and demonstrated while the business continued evaluating quoting options. The leads module is live and used by the sales team. These are distinct outcomes; the full quoting platform was not a production rollout.",
   "tags": [
     "AI Integration",
     "MCP",
@@ -26,7 +66,7 @@ export const projects: Project[] = [
     "TypeScript",
     "Docker"
   ],
-  "featured": true,
+  "featured": false,
   "featured_order": 1,
   "visible": true,
   "sort_order": 0,
@@ -42,7 +82,7 @@ export const projects: Project[] = [
     icon_url: '',
     tags: ['AI', 'Security', 'Local LLMs', 'XDR', 'Python', 'Master of IT Thesis'],
     featured: true,
-    featured_order: 2,
+    featured_order: 3,
     github_url: '',
     live_url: '',
     pdf_url: '/assets/Argus \u2013 LLM driven Cyber Security Executive Reporting Platform.pdf',
@@ -65,7 +105,7 @@ Built as a static site and deployed on Cloudflare Pages. Surprisingly good UX fo
     icon_url: '',
     tags: ['JavaScript', 'Cloudflare Pages', 'Static Site'],
     featured: false,
-    featured_order: 2,
+    featured_order: 3,
     github_url: '',
     live_url: 'https://catgpt-2kk.pages.dev/',
     pdf_url: '',
@@ -112,7 +152,7 @@ Currently in active development. Nothing public yet.`,
     long_description: "Problem and ownership\nI delivered the integration of an existing AI assistant platform, OpenClaw, with a client's Microsoft 365 environment. My contribution was deployment, identity and API integration, and security risk research.\n\nIntegration scope\nThe work covered Entra ID app registration, OAuth scopes, Microsoft Graph access for calendar, email and documents, and Telegram connectivity for asynchronous interaction. These integrations connected the assistant to existing workplace services.\n\nSecurity review\nI researched data handling, token exposure, prompt injection and third-party integration risks, then presented the findings to the client. The findings informed the client discussion around deployment risks and operational use.\n\nEvidence and boundaries\nClient configuration and data are confidential. Technical scope is summarised here at the integration level.",
     icon_url: '',
     tags: ['AI', 'Enterprise', 'Microsoft Entra', 'Graph API', 'Security'],
-    featured: true,
+    featured: false,
     featured_order: 3,
     github_url: '',
     live_url: '',
@@ -274,11 +314,11 @@ The paper addresses the tension between data utility (for analytics, AI, and bus
 // ─────────────────────────────────────────────────────────────────────────────
 export const about: About = {
   id: 1,
-  bio: `I design and build AI integrations for business workflows, combining software delivery with cloud, identity and security experience. I work from the initial business problem through scoping, implementation and technical handover.
+  bio: `I design and build enterprise AI integrations, agent workflows and adoption programmes. My experience spans Claude, OpenAI, OpenRouter, Microsoft Copilot and local models, combining hands-on development with cloud, identity and security.
 
-At Smile IT, that includes internal quoting tools, REST APIs and MCP integrations, alongside the development of an AI consulting offering. My wider work includes a local LLM security triage research project and enterprise AI assistant integration with Microsoft 365.
+At Smile IT, I have built and deployed an MCP integration, developed governed agent workflows, delivered AI readiness assessments and shaped the AI and Automation service offering. I work from the business problem through solution design, implementation, governance and training.
 
-I bring experience leading service delivery, co-founding a SaaS business and explaining technical decisions to customers, teams and investors. I hold a Master of Information Technology in Cyber Security.`,
+My wider experience includes local LLM security research, service delivery leadership and co-founding a SaaS business. I hold a Master of Information Technology in Cyber Security.`,
   photo_url: '/assets/flynn-chambers-portrait.jpg',
   skill_groups: [
     {
@@ -287,7 +327,7 @@ I bring experience leading service delivery, co-founding a SaaS business and exp
     },
     {
       label: 'AI',
-      items: ['AI Readiness Assessments', 'Copilot Readiness', 'Workflow Design', 'AI Consulting & Strategy', 'MCP Servers', 'LLM Tooling', 'Agent Deployment', 'Local LLMs', 'Model Routing', 'API Integration'],
+      items: ['Claude / Anthropic API', 'Claude Code', 'OpenAI', 'OpenRouter', 'Microsoft Copilot', 'Copilot Studio', 'Cursor', 'AI Readiness Assessments', 'Copilot Readiness', 'Workflow Design', 'AI Consulting & Strategy', 'MCP Servers', 'LLM Tooling', 'Agent Deployment', 'Local LLMs', 'Model Routing', 'API Integration'],
     },
     {
       label: 'Development',
@@ -305,7 +345,7 @@ I bring experience leading service delivery, co-founding a SaaS business and exp
   // Flat list (used by the /xp experience). Keep in sync with skill_groups above.
   skills: [
     'Solution Scoping', 'Stakeholder Management', 'Technical Pre-Sales', 'Quoting & Pricing', 'Proposals & SOWs',
-    'AI Readiness Assessments', 'Copilot Readiness', 'Workflow Design', 'AI Consulting & Strategy', 'MCP Servers', 'LLM Tooling', 'Agent Deployment', 'Local LLMs', 'Model Routing', 'API Integration',
+    'Claude / Anthropic API', 'Claude Code', 'OpenAI', 'OpenRouter', 'Microsoft Copilot', 'Copilot Studio', 'Cursor', 'AI Readiness Assessments', 'Copilot Readiness', 'Workflow Design', 'AI Consulting & Strategy', 'MCP Servers', 'LLM Tooling', 'Agent Deployment', 'Local LLMs', 'Model Routing', 'API Integration',
     'React', 'TypeScript', 'Next.js', 'Docker', 'REST APIs', 'Cloudflare', 'Firebase', 'SQL', 'PowerShell',
     'Azure', 'Entra ID', 'Microsoft 365', 'Windows Server', 'VMware', 'Hyper-V', 'Intune', 'Networking',
     'NIST', 'ISO 27001', 'CIS', 'Essential 8', 'Identity', 'Endpoint', 'Cloud Security',
@@ -401,7 +441,7 @@ flynnchambers.com · linkedin.com/in/flynn-chambers-tech
 
 ## Professional Summary
 
-Solutions consultant and engineer building AI integrations for business workflows, with experience across software, Microsoft cloud, identity and security. Own work from discovery and technical scoping through implementation and handover. Current work includes internal quoting software, REST APIs and MCP integrations; wider experience includes local LLM security research, enterprise AI assistant deployment and SaaS leadership. Master of Information Technology in Cyber Security.
+Solutions consultant and engineer delivering enterprise AI integrations, agent workflows and adoption programmes. Broad hands-on experience across Claude, OpenAI, OpenRouter, Microsoft Copilot and local models, supported by software engineering, Microsoft cloud, identity and security. Own work from discovery and solution design through implementation and handover. Experience includes production MCP integration, governed agent development and SaaS leadership. Master of Information Technology in Cyber Security.
 
 ## Core Capabilities
 
@@ -410,12 +450,13 @@ AI application integration · REST APIs and MCP · Technical solution design · 
 ## Employment History
 
 ### Solutions Consultant, Smile IT
-*2026 – Present · Brisbane*
-- Develop internal quoting software across a full-stack application, Docker packaging, REST APIs and MCP integration; designed the pricing matrix supporting the team's quoting workflow.
-- Own integration work connecting AI tooling to catalog quoting operations, including authentication, routing, supported actions and reference stability; document workflows and technical handovers.
-- Build a Discovery Session Companion using HTML/JavaScript and the Anthropic API to support scoping across workflow automation, bespoke development and autonomous agents.
-- Shape the AI consulting offering through readiness assessments and discovery, translating business requirements into phased implementation proposals.
-- Scope the identity, data governance and security foundations for AI adoption, including sensitivity labels, DLP and Conditional Access; deliver work across Microsoft 365, Entra ID, Azure and SharePoint.
+*April 2026 – Present · Brisbane*
+- Built and deployed a read-only MCP server connecting a business platform to AI tools, using FastMCP, Azure Container Apps and Entra ID; designed access gates and encrypted token storage, and shipped a tested security fix.
+- Build Iris, a governed agent platform integrating Halo PSA and Microsoft 365, with Docker sandboxing, scoped identity and draft-only workflows requiring a human to send. Development is ongoing.
+- Built BENCH with Next.js, TypeScript, PostgreSQL and Halo PSA integration. Quoting was trialled and demonstrated; the leads module is live and used by the sales team.
+- Deliver AI readiness assessments and remediation planning across identity, permissions, data exposure and governance; turn findings into practical implementation scopes.
+- Developed the AI and Automation service offering, pricing models and reusable delivery collateral; built and delivered foundational and advanced client AI training.
+- Build reusable AI workflows with Claude Code, MCP and APIs, including opportunity monitoring, proposal drafting and reporting; apply broad platform experience across Claude, OpenAI, OpenRouter and Copilot.
 
 ### Systems Engineer & Service Lead, Tribe Technology
 *2024 – 2026 · Auckland*
@@ -462,7 +503,7 @@ Microsoft MS-900 · Microsoft AZ-900 · Fortinet NSE 1–3 · NZQA US4098
 
 ## Technical Skills
 
-AI and development: Anthropic API, Claude Code, MCP, Python, TypeScript, React, Next.js, Node.js, REST APIs, Docker and Git.
+AI platforms and engineering: Claude / Anthropic API, Claude Code, OpenAI, OpenRouter, Microsoft Copilot, Copilot Studio, Cursor, MCP / FastMCP, local LLMs, Python, TypeScript, React, Next.js, REST APIs, Docker and Git.
 Microsoft and governance: Microsoft 365, Entra ID, Intune, Defender, Azure IaaS, AVD, SharePoint, Power Automate, Copilot Studio, Essential Eight, DLP and Conditional Access.
 Infrastructure and operations: Windows Server, VMware, Hyper-V, NetBox, UniFi, HaloPSA and IT Glue.
 `,

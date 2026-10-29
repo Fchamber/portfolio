@@ -5,7 +5,7 @@ flynnchambers.com · linkedin.com/in/flynn-chambers-tech
 
 ## Professional Summary
 
-Solutions consultant and engineer building AI integrations for business workflows, with experience across software, Microsoft cloud, identity and security. Own work from discovery and technical scoping through implementation and handover. Current work includes internal quoting software, REST APIs and MCP integrations; wider experience includes local LLM security research, enterprise AI assistant deployment and SaaS leadership. Master of Information Technology in Cyber Security.
+Solutions consultant and engineer delivering enterprise AI integrations, agent workflows and adoption programmes. Broad hands-on experience across Claude, OpenAI, OpenRouter, Microsoft Copilot and local models, supported by software engineering, Microsoft cloud, identity and security. Own work from discovery and solution design through implementation and handover. Experience includes production MCP integration, governed agent development and SaaS leadership. Master of Information Technology in Cyber Security.
 
 ## Core Capabilities
 
@@ -14,12 +14,13 @@ AI application integration · REST APIs and MCP · Technical solution design · 
 ## Employment History
 
 ### Solutions Consultant, Smile IT
-*2026 – Present · Brisbane*
-- Develop internal quoting software across a full-stack application, Docker packaging, REST APIs and MCP integration; designed the pricing matrix supporting the team's quoting workflow.
-- Own integration work connecting AI tooling to catalog quoting operations, including authentication, routing, supported actions and reference stability; document workflows and technical handovers.
-- Build a Discovery Session Companion using HTML/JavaScript and the Anthropic API to support scoping across workflow automation, bespoke development and autonomous agents.
-- Shape the AI consulting offering through readiness assessments and discovery, translating business requirements into phased implementation proposals.
-- Scope the identity, data governance and security foundations for AI adoption, including sensitivity labels, DLP and Conditional Access; deliver work across Microsoft 365, Entra ID, Azure and SharePoint.
+*April 2026 – Present · Brisbane*
+- Built and deployed a read-only MCP server connecting a business platform to AI tools, using FastMCP, Azure Container Apps and Entra ID; designed access gates and encrypted token storage, and shipped a tested security fix.
+- Build Iris, a governed agent platform integrating Halo PSA and Microsoft 365, with Docker sandboxing, scoped identity and draft-only workflows requiring a human to send. Development is ongoing.
+- Built BENCH with Next.js, TypeScript, PostgreSQL and Halo PSA integration. Quoting was trialled and demonstrated; the leads module is live and used by the sales team.
+- Deliver AI readiness assessments and remediation planning across identity, permissions, data exposure and governance; turn findings into practical implementation scopes.
+- Developed the AI and Automation service offering, pricing models and reusable delivery collateral; built and delivered foundational and advanced client AI training.
+- Build reusable AI workflows with Claude Code, MCP and APIs, including opportunity monitoring, proposal drafting and reporting; apply broad platform experience across Claude, OpenAI, OpenRouter and Copilot.
 
 ### Systems Engineer & Service Lead, Tribe Technology
 *2024 – 2026 · Auckland*
@@ -66,6 +67,6 @@ Microsoft MS-900 · Microsoft AZ-900 · Fortinet NSE 1–3 · NZQA US4098
 
 ## Technical Skills
 
-AI and development: Anthropic API, Claude Code, MCP, Python, TypeScript, React, Next.js, Node.js, REST APIs, Docker and Git.
+AI platforms and engineering: Claude / Anthropic API, Claude Code, OpenAI, OpenRouter, Microsoft Copilot, Copilot Studio, Cursor, MCP / FastMCP, local LLMs, Python, TypeScript, React, Next.js, REST APIs, Docker and Git.
 Microsoft and governance: Microsoft 365, Entra ID, Intune, Defender, Azure IaaS, AVD, SharePoint, Power Automate, Copilot Studio, Essential Eight, DLP and Conditional Access.
 Infrastructure and operations: Windows Server, VMware, Hyper-V, NetBox, UniFi, HaloPSA and IT Glue.
